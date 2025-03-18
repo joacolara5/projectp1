@@ -32,7 +32,9 @@ nav a {
 }
 
 nav ul li a:hover {
-    color: #f4a300; /* Color al pasar el mouse */
+    background-color: #f4a300;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /* Sección Historia */
@@ -67,6 +69,14 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     width: 200px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.libro.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .libro img {
@@ -74,24 +84,45 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Cuadros de reseñas */
-.reseñas-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Botón Alquilar */
+.boton-alquilar {
+    background-color: #5a3e36;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
 }
 
-.cuadro-reseña {
-    background-color: #fff;
-    border-radius: 10px;
+.boton-alquilar:hover {
+    background-color: #f4a300;
+    transform: scale(1.1);
+}
+
+/* Sección Sinopsis */
+#sinopsis-contenido {
+    text-align: left;
     padding: 20px;
-    margin: 15px;
-    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.cuadro-reseña h3 {
-    text-align: center;
+#volver-btn {
+    background-color: #5a3e36;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#volver-btn:hover {
+    background-color: #f4a300;
 }
 
 /* Redes sociales */
@@ -100,6 +131,23 @@ nav ul li a:hover {
 }
 
 .redes img {
-    width: 40px; /* Tamaño pequeño de las imágenes */
+    width: 40px;
     height: auto;
+}
+
+/* Estilo para el botón de "Ver Catálogo" */
+#ver-catalogo-btn {
+    background-color: #f4a300;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#ver-catalogo-btn:hover {
+    background-color: #e08a00;
+    transform: scale(1.1);
 }
