@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual Global</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Virtual Global</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Nuestra Historia</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#formulario">Alquilar</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="historia" class="seccion">
+        <h2>Nuestra Historia</h2>
+        <p>Desde su creación en 2005, la Biblioteca Virtual Global ha sido un faro del conocimiento, permitiendo a lectores de todo el mundo acceder a miles de títulos de diversas categorías. Nuestro objetivo es democratizar la lectura y fomentar el amor por los libros en la era digital. Hemos trabajado incansablemente para ofrecer una plataforma accesible, amigable y rica en contenido. Hoy, contamos con una comunidad activa que comparte su pasión por la lectura.</p>
+        <img src="gallery/biblioteca.jpg" alt="Biblioteca" class="imagen-historia">
+    </section>
+
+    <section id="catalogo" class="seccion">
+        <h2>Catálogo de Libros</h2>
+        <button id="ver-catalogo-btn">Ver Catálogo</button>
+        <div class="libros-container" id="libros-container"></div>
+    </section>
+
+    <section id="reseñas" class="seccion">
+        <h2>Reseñas de Libros</h2>
+        <div class="reseñas-container">
+            <div class="cuadro-reseña">
+                <h3>1984</h3>
+                <p>Una obra maestra distópica que explora los peligros del totalitarismo y el control del pensamiento.</p>
+            </div>
+
+            <div class="cuadro-reseña">
+                <h3>Cien Años de Soledad</h3>
+                <p>Un épico relato de la familia Buendía, que marca el corazón de la literatura latinoamericana.</p>
+            </div>
+
+            <div class="cuadro-reseña">
+                <h3>El Principito</h3>
+                <p>Una historia poética que reflexiona sobre la vida, la amistad y la importancia de lo esencial.</p>
+            </div>
+
+            <div class="cuadro-reseña">
+                <h3>Moby Dick</h3>
+                <p>Una profunda exploración de la obsesión, la venganza y la naturaleza humana, todo a bordo de un barco ballenero.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario" class="seccion" style="display: none;">
+        <h2>Alquilar un Libro</h2>
+        <form id="alquiler-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="direccion">Dirección de envío:</label>
+            <input type="text" id="direccion" required>
+            <label for="libro">Selecciona un libro:</label>
+            <select id="libro" required></select>
+            <button type="submit">Alquilar</button>
+        </form>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p>Email: contacto@bibliotecavirtual.com</p>
+        <p>Dirección: Calle de la Lectura, 123, Mundo</p>
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank"><img src="gallery/face.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="gallery/x.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="gallery/ig.jpeg" alt="Instagram"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Biblioteca Virtual Global - Todos los derechos reservados 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
